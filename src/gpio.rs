@@ -590,6 +590,8 @@ mod chip {
     pin!(Gpio34:34, Input, RTC:4, ADC1:6, NODAC:0, NOTOUCH:0);
     pin!(Gpio35:35, Input, RTC:5, ADC1:7, NODAC:0, NOTOUCH:0);
     pin!(Gpio36:36, Input, RTC:0, ADC1:0, NODAC:0, NOTOUCH:0);
+    pin!(Gpio37:37, Input, RTC:1, ADC1:1, NODAC:0, NOTOUCH:0);
+    pin!(Gpio38:38, Input, RTC:2, ADC1:2, NODAC:0, NOTOUCH:0);
     pin!(Gpio39:39, Input, RTC:3, ADC1:3, NODAC:0, NOTOUCH:0);
 
     pub struct Pins {
@@ -640,6 +642,8 @@ mod chip {
         pub gpio34: Gpio34<Unknown>,
         pub gpio35: Gpio35<Unknown>,
         pub gpio36: Gpio36<Unknown>,
+        pub gpio37: Gpio37<Unknown>,
+        pub gpio38: Gpio38<Unknown>,
         pub gpio39: Gpio39<Unknown>,
     }
 
@@ -696,6 +700,8 @@ mod chip {
                 gpio34: Gpio34::<Unknown>::new(),
                 gpio35: Gpio35::<Unknown>::new(),
                 gpio36: Gpio36::<Unknown>::new(),
+                gpio37: Gpio37::<Unknown>::new(),
+                gpio38: Gpio38::<Unknown>::new(),
                 gpio39: Gpio39::<Unknown>::new(),
             }
         }
